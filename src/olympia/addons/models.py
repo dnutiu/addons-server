@@ -306,7 +306,7 @@ class AddonManager(ManagerBase):
                 addonreviewerflags__needs_admin_content_review=True)
         return qs
 
-    def get_needs_human_review_queue(self, admin_reviewer=False):
+    def get_scanners_queue(self, admin_reviewer=False):
         """Return a queryset of Addon objects that have been approved but
         contain versions that were automatically flagged as needing human
         review (regardless of channel)."""
